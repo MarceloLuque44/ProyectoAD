@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Análisis y Diseño de Sistemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" width="50" height="50">
+            <h1>Sistema de gestion de inventario</h1>
+        </div>
+        <nav>
+            <button onclick="showSection('inicio')">Inicio</button>
+            <button onclick="showSection('modeloEstructurado')">Modelo Estructurado</button>
+            <button onclick="showSection('orientadoObjetos')">Orientado a Objetos</button>
+            <button onclick="showSection('videoTutorial')">Video Tutorial</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="content-section" style="display: block;">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestro blog sobre Análisis y Diseño de Sistemas.</p>
+        </section>
+        
+        <section id="modeloEstructurado" class="content-section" style="display: none;">
+            <h2>Modelo Estructurado</h2>
+            <p>Descripción del análisis estructurado...</p>
+            <div>
+                <button onclick="showSubsection('ma')">M.A</button>
+                <button onclick="showSubsection('me')">M.E</button>
+            </div>
+            <div id="ma" class="subsection" style="display: none;">
+                <p>Contenido de M.A</p>
+            </div>
+            <div id="me" class="subsection" style="display: none;">
+                <p>Contenido de M.E</p>
+            </div>
+        </section>
+        
+        <section id="orientadoObjetos" class="content-section" style="display: none;">
+            <h2>Orientado a Objetos</h2>
+            <p>Descripción del análisis orientado a objetos...</p>
+        </section>
+        
+        <section id="videoTutorial" class="content-section" style="display: none;">
+            <h2>Video Tutorial</h2>
+            <p>Aquí se incluirá el video tutorial.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nombre de la Página | Creado por [Tu Nombre]</p>
+    </footer>
+</body>
+</html>
