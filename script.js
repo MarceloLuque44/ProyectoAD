@@ -1,15 +1,15 @@
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.style.display = 'none';
+function mostrarSeccion(idSeccion) {
+    const secciones = document.querySelectorAll('.seccion');
+    secciones.forEach(seccion => {
+        seccion.style.display = 'none';
     });
-    document.getElementById(sectionId).style.display = 'block';
+    document.getElementById(idSeccion).style.display = 'block';
 }
 
-function showSubsection(subsectionId) {
-    const subsections = document.querySelectorAll('.subsection');
-    subsections.forEach(subsection => {
-        subsection.style.display = 'none';
+function mostrarSubseccion(idSubseccion) {
+    const subsecciones = document.querySelectorAll('.subseccion');
+    subsecciones.forEach(subseccion => {
+        subseccion.style.display = 'none';
     });
-    document.getElementById(subsectionId).style.display = 'block';
+    document.getElementById(idSubseccion).style.display = 'block';
 }
