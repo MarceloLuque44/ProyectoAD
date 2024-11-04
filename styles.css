@@ -50,7 +50,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.content-section {
+.seccion {
     display: none;
 }
 
@@ -58,7 +58,7 @@ main {
     display: block;
 }
 
-.content-section h2 {
+.seccion h2 {
     color: #333;
     margin-bottom: 1rem;
 }
