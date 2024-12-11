@@ -1,0 +1,68 @@
+/*------ service policy start ------*/
+.policy-block {
+    border-bottom: 1px solid $bdr-color;
+}
+.policy {
+    &-item {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: -3px;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            display: block;
+            text-align: center;
+        }
+    }
+    &-icon {
+        font-size: 35px;
+        color: $black-soft;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border: 5px solid #fff4f2;
+        border-radius: 50%;
+        // responsive
+        @media #{$md-device, $sm-device} {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+    &-content {
+        padding-left: 30px;
+        // responsive
+        @media #{$lg-device} {
+            padding-left: 10px;
+        }
+        @media #{$md-device, $sm-device} {
+            padding-left: 0;
+        }
+        p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1;
+        }
+    }
+    &-title {
+        line-height: 1;
+        font-weight: 400;
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        &:before {
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            content: '';
+            position: absolute;
+            background-color: #4d5e7c;
+            // responsive
+            @media #{$md-device, $sm-device} {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+/*------ service policy end ------*/
